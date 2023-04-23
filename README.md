@@ -25,6 +25,6 @@ quicklog.writeInfo('this is a super error log')
 
 #### Will output :
 
-<div style="background-color: red;">
+<div style="color: red;">
   Ceci est une ligne en rouge.
 </div>
