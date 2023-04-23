@@ -1,4 +1,4 @@
-# EasyLogger
+# QuickFilelog
 
 #### easylogger is a lightweight package to log info, warning and error in an dedicated file.
 
@@ -8,17 +8,17 @@
 
 with syntaxic coloration :
 ```javascript
-const EasyLogger = require('EasyLogger')('logfile.txt', true);
+const quicklog = require('quickfilelog')('logfile.txt', true);
 ```
 without syntaxic coloration :
 ```javascript
-const EasyLogger = require('EasyLogger')('logfile.txt', false);
+const quicklog = require('quickfilelog')('logfile.txt', false);
 ```
 
 #### Methods :
 
 ```javascript
-ErrorLog.writeInfo('this is a super info log') 
-ErrorLog.writeWarning('this is a super warning log') 
-ErrorLog.writeInfo('this is a super error log') 
+quicklog.writeInfo('this is a super info log') 
+quicklog.writeWarning('this is a super warning log') 
+quicklog.writeInfo('this is a super error log') 
 ```
