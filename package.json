@@ -1,8 +1,8 @@
 {
-  "name": "quicklogger",
+  "name": "quickfilelog",
   "version": "1.0.0",
   "description": "Lightweight package to log infos",
-  "main": "EasyLogger.js",
+  "main": "QuickLogger.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
