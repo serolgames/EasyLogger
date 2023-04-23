@@ -4,6 +4,11 @@
 
 # How to use : 
 
+import :
+```javascript
+const EasyLogger = require('EasyLogger')
+``
+
 ```javascript
 ErrorLog.writeInfo('this is a super info texte')
 ```
