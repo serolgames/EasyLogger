@@ -1,0 +1,21 @@
+{
+  "name": "easylogger",
+  "version": "1.0.0",
+  "description": "Lightweight package to log infos",
+  "main": "EasyLogger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository":{
+    "type":"git",
+    "url":"git+https://github.com/serolgames/EasyLogger.git"
+  },
+  "keywords": ["EasyLogger", "easylogger"],
+  "author": "Clément LORES",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "fs": "^0.0.1-security",
+    "semaphore": "^1.1.0"
+  }
+}
