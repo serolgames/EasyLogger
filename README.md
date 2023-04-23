@@ -10,7 +10,10 @@ const EasyLogger = require('EasyLogger')('logfile.txt', true);//with syntaxic co
 const EasyLogger = require('EasyLogger')('logfile.txt', false);//without syntaxic coloration
 ```
 
+#### Method :
 
 ```javascript
-ErrorLog.writeInfo('this is a super info texte')
+ErrorLog.writeInfo('this is a super info log') 
+ErrorLog.writeWarning('this is a super warning log') 
+ErrorLog.writeInfo('this is a super error log') 
 ```
