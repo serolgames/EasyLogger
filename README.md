@@ -6,9 +6,13 @@
 
 #### import :
 
+with syntaxic coloration :
 ```javascript
-const EasyLogger = require('EasyLogger')('logfile.txt', true);//with syntaxic coloration
-const EasyLogger = require('EasyLogger')('logfile.txt', false);//without syntaxic coloration
+const EasyLogger = require('EasyLogger')('logfile.txt', true);
+```
+without syntaxic coloration :
+```javascript
+const EasyLogger = require('EasyLogger')('logfile.txt', false);
 ```
 
 #### Methods :
