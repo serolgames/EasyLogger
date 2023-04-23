@@ -2,17 +2,17 @@ const fs = require('fs');
 const Semaphore = require('semaphore');
 const colors = require('colors');
 
-class EasyLogger 
+class QuickLogger 
 {
     static semaphore = null;
 
     constructor(filepath, coloration) 
     {
-        this.filepath = filepath === '' ? 'easylogger.txt' : filepath;
+        this.filepath = filepath === '' ? 'QuickLogger.txt' : filepath;
         this.coloration = coloration
 
-        if(EasyLogger.semaphore === null) 
-            EasyLogger.semaphore = Semaphore(1);
+        if(QuickLogger.semaphore === null) 
+            QuickLogger.semaphore = Semaphore(1);
     }
 
     #write(type, data) 
@@ -38,42 +38,42 @@ class EasyLogger
             }
         }
       
-        EasyLogger.semaphore.take(() => {
+        QuickLogger.semaphore.take(() => {
           fs.appendFile(this.filepath, line, (err) => {
             /*if (err) 
               console.error("Une erreur est survenue lors de l'écriture du fichier : ", err);
             else 
               console.log('Le fichier a été écrit avec succès.');*/
-            EasyLogger.semaphore.leave();
+            QuickLogger.semaphore.leave();
           });
         });
     }
       
     writeInfo(data) 
     {
-        this.#write(EasyLogger.INFO, data);
+        this.#write(QuickLogger.INFO, data);
     }
     
     writeWarning(data) 
     {
-        this.#write(EasyLogger.WARNING, data);
+        this.#write(QuickLogger.WARNING, data);
     }
     
     writeError(data)
     {
-        this.#write(EasyLogger.ERROR, data);
+        this.#write(QuickLogger.ERROR, data);
     }
 
     erase() 
     {
-        EasyLogger.semaphore.take(() => {
+        QuickLogger.semaphore.take(() => {
             fs.truncate(this.filepath, 0, (err) => {
                 /*if (err) 
                     console.error('Erreur lors de la suppression du contenu du fichier : ', err);
                 else 
                     console.log('Le contenu du fichier a été supprimé avec succès.');*/
                 
-                EasyLogger.semaphore.leave();
+                QuickLogger.semaphore.leave();
             });
         });
     }
@@ -92,10 +92,10 @@ class EasyLogger
     }
 }
 
-EasyLogger.INFO = '[INFO]';
-EasyLogger.WARNING = '[WARNING]';
-EasyLogger.ERROR = '[ERROR]';
+QuickLogger.INFO = '[INFO]';
+QuickLogger.WARNING = '[WARNING]';
+QuickLogger.ERROR = '[ERROR]';
 
 module.exports = function(filepath, coloration) {
-    return new EasyLogger(filepath, coloration);
+    return new QuickLogger(filepath, coloration);
 };

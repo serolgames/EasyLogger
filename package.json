@@ -1,5 +1,5 @@
 {
-  "name": "easylogger",
+  "name": "quicklogger",
   "version": "1.0.0",
   "description": "Lightweight package to log infos",
   "main": "EasyLogger.js",
@@ -8,9 +8,9 @@
   },
   "repository":{
     "type":"git",
-    "url":"git+https://github.com/serolgames/EasyLogger.git"
+    "url":"git+https://github.com/serolgames/QuickLogger.git"
   },
-  "keywords": ["EasyLogger", "easylogger"],
+  "keywords": ["QuickLogger", "quicklogger"],
   "author": "Clément LORES",
   "license": "ISC",
   "dependencies": {
