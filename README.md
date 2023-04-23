@@ -4,6 +4,6 @@
 
 # How to use : 
 
-* ```javascript
+```javascript
 ErrorLog.writeInfo('this is a super info texte')
 ```
