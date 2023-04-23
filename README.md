@@ -1,6 +1,6 @@
 # EasyLogger
 
-#### easylogger is a lightweight package to log info, warning and error comment in an error log file.
+#### easylogger is a lightweight package to log info, warning and error in an dedicated file.
 
 # How to use : 
 
