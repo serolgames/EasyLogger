@@ -4,7 +4,8 @@
 
 # How to use : 
 
-#### import :
+#### import :
+
 ```javascript
 const EasyLogger = require('EasyLogger')('logfile.txt', true);//with syntaxic coloration
 const EasyLogger = require('EasyLogger')('logfile.txt', false);//without syntaxic coloration
