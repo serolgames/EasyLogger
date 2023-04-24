@@ -1,7 +1,6 @@
 # QuickFilelog
 
-#### easylogger is a lightweight package to log info, warning and error in an dedicated file.
-Atomicity. There can be no competition problem between processes because the code uses semaphores which protects access to the file.
+#### This npm package is designed to facilitate the creation and writing of log files in your application. We have included file locking mechanisms to ensure that multiple processes or threads cannot write to the same log file simultaneously, so you don't need to manage this yourself.
 
 # How to use : 
 
