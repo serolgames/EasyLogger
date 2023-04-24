@@ -20,7 +20,7 @@ const quicklog = require('quickfilelog')('logfile.txt', false);
 ```javascript
 quicklog.writeInfo('this is a super info log')//write a info type
 quicklog.writeWarning('this is a super warning log')//write a warning type
-quicklog.writeInfo('this is a super error log')//write an error type 
+quicklog.writeError('this is a super error log')//write an error type 
 quicklog.erase()//flush your log file content
 ```
 
