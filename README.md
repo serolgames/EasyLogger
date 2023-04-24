@@ -1,6 +1,7 @@
 # QuickFilelog
 
 #### easylogger is a lightweight package to log info, warning and error in an dedicated file.
+Atomicity. There can be no competition problem between processes because the code uses semaphores which protects access to the file.
 
 # How to use : 
 
